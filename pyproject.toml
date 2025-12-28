@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vinylnet"
+version = "0.1.0"
+description = "Librería para convertir audio en representaciones visuales espirales (Spiral Coordinate Mapping) para IA y Alta Fidelidad."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+  { name = "Emiliano Cuellar", email = "emiliano446152@gmail.com" },
+]
+keywords = ["audio", "visualization", "ai", "machine learning", "spectrogram", "signal processing"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Multimedia :: Sound/Audio :: Analysis",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "opencv-python",
+    "librosa",
+    "soundfile"
+]
+
+# Configuración vital para encontrar tu código dentro de la carpeta 'src'
+[tool.setuptools.packages.find]
+where = ["src"]
